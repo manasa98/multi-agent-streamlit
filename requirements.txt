@@ -6,7 +6,6 @@ importlib_resources==6.4.5
 kaggle==1.6.17
 lunarcalendar==0.0.9
 matplotlib==3.9.2
-numpy==1.24.2
 plotly==5.24.1
 protobuf==5.28.3
 pytest==8.3.3
