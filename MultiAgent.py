@@ -32,7 +32,7 @@ def tavilysearch(text,Boole):
 
 def geminillm(prompt):
     
-    genai.configure(api_key="AIzaSyBX5w_komNflLDTdjusQmxoM4IbRwgVKjs")
+    genai.configure(api_key="AIzaSyA96f_-FzE6O5ad1c7L6Cs2rXYNYAXltEk")
     generation_config={"temperature": 1.0, "top_p":1, "top_k":1, "max_output_tokens":2048}
     model=genai.GenerativeModel("gemini-1.5-pro", generation_config=generation_config, system_instruction="Generate a response listing three specific use cases on how integrating AI/ML into a company can enhance customer satisfaction. Ensure each use case: Starts with a clear subheading designed to facilitate dataset searches on platforms like Kaggle, Hugging Face, or GitHub. Generate use case subheadings that incorporate relevant keywords beyond the example terms like customer satisfaction, sentiment analysis, recommendation engine, or predictive customer service. Describes the use case and its benefits in terms of customer satisfaction. Includes a real-world example (if applicable) of a company that successfully implemented this use case.")
     gen_res=model.generate_content([prompt])
