@@ -40,7 +40,7 @@ def geminillm(prompt):
     return gen_res.text
 
 def text_for_dataset(text):
-    genai.configure(api_key="AIzaSyC2hINg9MIZUJll7K22vNNUq1HBJ6uWJzg")
+    genai.configure(api_key="AIzaSyA96f_-FzE6O5ad1c7L6Cs2rXYNYAXltEk")
     generation_config={"temperature": 1.0, "top_p":1, "top_k":1, "max_output_tokens":2048}
     model2=genai.GenerativeModel("gemini-1.5-pro", generation_config=generation_config, system_instruction="""Analyze each use case provided and recommend relevant dataset names for each use case for searching, based solely on the use case's key requirements. Respond with just the names of the datasets without additional explanations or descriptions. The response format should be:
                                                                                                                 1.[Dataset Name]
